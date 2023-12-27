@@ -1,6 +1,6 @@
 name: deploy-container
 on:
-  merge:
+  push:
     branches:
       - dev
     paths:
