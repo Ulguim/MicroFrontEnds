@@ -1,21 +1,31 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+
+
 module.exports = {
-    module:{
-        rules:[
+    module: {
+        rules: [
             {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
-                use:{
+                use: {
                     loader: "babel-loader",
-                    options:{
-                        presets:[
+                    options: {
+                        presets: [
                             "@babel/preset-react",
                             "@babel/preset-env"
                         ],
-                        plugins:[
+                        plugins: [
                             "@babel/plugin-transform-runtime"
                         ]
                     }
                 }
             }
         ]
-    }}
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './public/index.html'
+        })
+    ]
+}
