@@ -1,13 +1,15 @@
-name: deploy-container
+name: deploy-amazon
+
 on:
   push:
     branches:
       - dev
     paths:
-      - 'packages/container/**'
+      - "packages/container/**"
 defaults:
   run:
     working-directory: packages/container
+
 jobs:
   build:
     runs-on: ubuntu-latest
