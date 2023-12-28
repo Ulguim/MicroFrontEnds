@@ -2,7 +2,6 @@ import { mount } from "auth/AuthApp";
 import React, { useRef, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 export default ({ onSignIn }) => {
-    console.log("🚀 ~ file: AuthApp.js:5 ~ onSignIn:", onSignIn)
     const ref = useRef(null);
     const history = useHistory();
     useEffect(() => {
@@ -11,9 +10,7 @@ export default ({ onSignIn }) => {
 
         const { onParentNavigate } = mount(ref.current, {
             onSignIn: () => {
-                console.log("🚀 ~ file: AuthApp.js:17 ~ onSignIn: ~ onSignIn", onSignIn)
                 onSignIn();
-            
             },
             initialPath: history.location.pathname,
             onNavigate: ({ pathname: nextPathName }) => {

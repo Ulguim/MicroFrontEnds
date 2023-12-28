@@ -48,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignUp({ onSignIn }) {
-  console.log("🚀 ~ file: Signup.js:51 ~ SignUp ~ onSignIn:", onSignIn)
   const classes = useStyles();
 
   return (
