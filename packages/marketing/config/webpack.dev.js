@@ -8,6 +8,10 @@ const commonConfig = require('./webpack.common');
 
 const devConfig = {
     mode: 'development',
+    output: {
+        //  Public path is used for nested paths
+        publicPath: 'http://localhost:8081/'
+    },
     devServer: {
         port: 8081,
         historyApiFallback: {
