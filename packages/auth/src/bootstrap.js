@@ -3,7 +3,6 @@ import ReactDom from 'react-dom';
 import App from "./App";
 import { createMemoryHistory, createBrowserHistory } from "history";
 const mount = (el, { onNavigate, defaultHistory,initialPath, onSignIn }) => {
-    console.log("🚀 ~ file: bootstrap.js:6 ~ mount ~ initialPath:", initialPath)
     const history = defaultHistory || createMemoryHistory({
         initialEntries: [initialPath]
     });

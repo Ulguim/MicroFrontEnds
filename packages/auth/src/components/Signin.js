@@ -87,7 +87,6 @@ export default function SignIn({ onSignIn }) {
             label="Password"
             type="password"
             id="password"
-            onChange={() => console.log("🚀 ~ file: SignIn.js:149 ~ onChange")}
             autoComplete="current-password"
           />
           <FormControlLabel

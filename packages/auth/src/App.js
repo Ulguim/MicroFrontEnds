@@ -8,7 +8,6 @@ const generateClassname = createGenerateClassName({
     productionPrefix: "at"
 });
 export default ({ history, onSignIn }) => {
-    console.log("🚀 ~ file: App.js:11 ~ onSignIn:",history, onSignIn)
     return <div>
         <StylesProvider generateClassName={generateClassname}>
             <MemoryRouter history={history}>
