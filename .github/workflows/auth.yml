@@ -10,11 +10,9 @@ on:
 defaults:
   run:
     working-directory: packages/auth
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - run: npm install
