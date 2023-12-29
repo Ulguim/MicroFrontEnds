@@ -30,7 +30,7 @@ export default () => {
             <div>
                 <Header onSignOut={() => setIsSignedIn(false)}
                     isSignedIn={isSignedIn} />
-                <Suspense fallback={<>text</>}>
+                <Suspense fallback={<>Loading</>}>
                     <Switch>
                         <Route path="/auth"  >
                             <AuthApp onSignIn={() => setIsSignedIn(true)} />
