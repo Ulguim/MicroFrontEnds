@@ -6,7 +6,6 @@ on:
       - dev
     paths:
       - 'packages/container/**'
-
 defaults:
   run:
     working-directory: packages/container
@@ -14,7 +13,6 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - run: npm install
